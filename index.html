@@ -7,6 +7,7 @@
 	<title>Exemple d'utilisation de Bootstrap</title> <!-- Ce titre s'affiche dans l'onglet du navigateur -->
 	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body> <!-- Corps de la page -->
@@ -95,12 +96,25 @@
 		
 			<!-- COLONNE DE DROITE -->
 			<div class="col-sm-4">
-				<div>
-					<form method="post" action="#">
-						<label for="recherche">Rechercher : </label><input type="text" name="recherche" id="recherche" />
-						<input type="submit" name="btrechercher" value="Rechercher">
-					</form>
+				
+				<!--Formulaire de recherche -->
+				<div class="card">
+					<div class="card-header">
+						<i class="fa fa-search"></i> Rechercher
+					</div>
+					<div class="card-body">
+						<form method="post" action="#">
+							<div class="form-group">
+								<input class="form-control" type="text" name="recherche" id="recherche"/>
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn btn-success form-control">Rechercher</button>
+							</div>
+						</form>
+					</div>
 				</div>
+				<!--Fin Formulaire de recherche -->
+
 				<div>
 					<p>Laisser un commentaire :</p>
 					<form method="post" action="#">

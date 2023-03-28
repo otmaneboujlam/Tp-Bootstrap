@@ -98,16 +98,16 @@
 			<div class="col-sm-4">
 				
 				<!--Formulaire de recherche -->
-				<div class="card">
+				<div class="card mb-3">
 					<div class="card-header">
 						<i class="fa fa-search"></i> Rechercher
 					</div>
 					<div class="card-body">
 						<form method="post" action="#">
-							<div class="form-group">
+							<div class="mb-3">
 								<input class="form-control" type="text" name="recherche" id="recherche"/>
 							</div>
-							<div class="form-group">
+							<div class="mb-3">
 								<button type="button" class="btn btn-success form-control">Rechercher</button>
 							</div>
 						</form>
@@ -115,16 +115,29 @@
 				</div>
 				<!--Fin Formulaire de recherche -->
 
-				<div>
-					<p>Laisser un commentaire :</p>
-					<form method="post" action="#">
-						<label for="pseudo">Pseudo : </label><input type="text" name="pseudo" id="pseudo" />
-						<br />
-						<label for="message">Message : </label>
-						<textarea name="memo" rows="5" cols="30">Tapez votre message ici</textarea>
-						<input type="submit" name="btEnvoyer" value="Envoyer">
-					</form>
+				<!--Formulaire de commentaire -->
+				<div class="card mb-3">
+					<div class="card-header">
+						<i class="fa fa-comments"></i> Laisser un commentaire
+					</div>
+					<div class="card-body">
+						<form method="post" action="#">
+							<div class="mb-3">
+								<label class="mb-2" for="pseudo">Pseudo : </label>
+								<input class="form-control" type="text" name="pseudo" id="pseudo" />
+							</div>
+							<div class="mb-3">
+								<label class="d-block mb-2" for="message">Message : </label>
+								<textarea class="form-control" id="msg" name="memo" rows="5" cols="30" placeholder="Tapez votre message ici"></textarea>
+							</div>
+							<div class="mb-3">
+								<button type="button" class="btn btn-primary form-control">Envoyer</button>
+							</div>
+						</form>
+					</div>
 				</div>
+				<!--Fin Formulaire de commentaire -->
+
 				<div>
 					<p>Très bon tuto, parfait, comme toujours sur ce site Internet au design futuriste. G. MENVU</p>
 					<p>Site très instructif, c'est devenu pour moi une référence en matière de développement Web. Le design est

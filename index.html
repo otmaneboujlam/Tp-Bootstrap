@@ -108,7 +108,7 @@
 								<input class="form-control" type="text" name="recherche" id="recherche">
 							</div>
 							<div>
-								<button type="button" class="btn btn-success form-control">Rechercher</button>
+								<button type="button" class="btn btn-success form-control" data-bs-toggle="modal" data-bs-target="#myModal">Rechercher</button>
 							</div>
 						</form>
 					</div>
@@ -173,6 +173,26 @@
 	<div class="mt-0 p-3 bg-secondary text-center">&copy; 2018 - Ne pas prendre exemple !</div>
 	<!-- Fin PIED DE PAGE -->
 	
+	<!--Une boite de dialogue -->
+	<div class="modal" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!--Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Modal Heading</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
+				</div>
+				<!--Modal body -->
+				<div class="modal-body">Modal body..</div>
+				<!--Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Fin boite de dialogue -->
+
 	<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

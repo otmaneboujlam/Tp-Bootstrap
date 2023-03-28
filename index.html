@@ -13,13 +13,13 @@
 <body> <!-- Corps de la page -->
 
 	<!-- HEADER Titre de la page -->
-	<div class="p-5 mb-0 bg-secondary text-center">
+	<div class="p-5 mb-0 bg-secondary text-center text-light">
 		<h1>Exemple d'utilisation de Bootstrap</h1>
 	</div>
 	<!-- Fin HEADER -->
 
 	<!-- MENU PRINCIPAL -->
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<nav class="p-2 navbar navbar-expand-sm bg-dark navbar-dark">
 		<a class="navbar-brand" href="#">Accueil</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
 	<!-- Fin du MENU PRINCIPAL -->
 
 	<!-- ZONE PRINCIPALE -->
-	<div class="container mt-3">
+	<div class="container-fluid mt-3">
 		<div class="row">
 			<!-- COLONNE DE GAUCHE = PRINCIPALE -->
 			<div class="col-sm-8">
@@ -103,12 +103,12 @@
 						<i class="fa fa-search"></i> Rechercher
 					</div>
 					<div class="card-body">
-						<form method="post" action="#">
+						<form method="get" action="#" id="formRecherche">
 							<div class="mb-3">
 								<input class="form-control" type="text" name="recherche" id="recherche">
 							</div>
 							<div>
-								<button type="button" class="btn btn-success form-control" data-bs-toggle="modal" data-bs-target="#myModal">Rechercher</button>
+								<button type="button" class="btn btn-success form-control" onclick="valideRecherche()">Rechercher</button>
 							</div>
 						</form>
 					</div>
@@ -170,7 +170,7 @@
 	<!-- Fin ZONE PRINCIPALE -->
 	
 	<!-- PIED DE PAGE -->
-	<div class="mt-0 p-3 bg-secondary text-center">&copy; 2018 - Ne pas prendre exemple !</div>
+	<div class="mt-0 p-3 bg-secondary text-center text-light">&copy; 2018 - Ne pas prendre exemple !</div>
 	<!-- Fin PIED DE PAGE -->
 	
 	<!--Une boite de dialogue -->
@@ -179,14 +179,14 @@
 			<div class="modal-content">
 				<!--Modal Header -->
 				<div class="modal-header">
-					<h4 class="modal-title">Modal Heading</h4>
+					<h4 class="modal-title">ATTENTION</h4>
 					<button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
 				</div>
 				<!--Modal body -->
-				<div class="modal-body">Modal body..</div>
+				<div class="modal-body">Le champ de recherche ne peut pas être vide.</div>
 				<!--Modal footer -->
 				<div class="modal-footer">
-					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
 				</div>
 			</div>
 		</div>
@@ -194,6 +194,7 @@
 	<!--Fin boite de dialogue -->
 
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/valideRecherche.js"></script>
 </body>
 
 </html>
